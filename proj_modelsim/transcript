@@ -1,0 +1,1128 @@
+# Compile of ALU.v was successful.
+# Compile of ALU_Decoder.v was successful.
+# Compile of Bit_Rate_Pulse.v was successful.
+# Compile of Control_Signals.v was successful.
+# Compile of Control_Unit.v was successful.
+# Compile of Counter_Param.v was successful.
+# Compile of Data_Memory.v was successful.
+# Compile of Data_Path.v was successful.
+# Compile of Decoder_Onehot.v was successful.
+# Compile of FF_D_2enable.v was successful.
+# Compile of FF_D_enable.v was successful.
+# Compile of FSM_UART_rx.v was successful.
+# Compile of FSM_UART_tx.v was successful.
+# Compile of GPIO.v was successful.
+# Compile of Memory_Controller.v was successful.
+# Compile of Mux.v was successful.
+# Compile of Mux2x1.v was successful.
+# Compile of Mux4x1.v was successful.
+# Compile of Program_Memory.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_param.v was successful.
+# Compile of Register.v was successful.
+# Compile of RISC_V_Single_Cycle.v was successful.
+# Compile of RISC_V_Single_Cycle_tb.v was successful.
+# Compile of rv32i_imm_gen.v was successful.
+# Compile of RXshift_register.v was successful.
+# Compile of shift_left_one.v was successful.
+# Compile of TXshift_register.v was successful.
+# Compile of UART.v was successful.
+# Compile of UART_RX.v was successful.
+# Compile of UART_TX.v was successful.
+# Compile of RISC_V_Single_Cycle_UART_tb.v was successful.
+# 32 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.RISC_V_Single_Cycle_tb
+# vsim -voptargs="+acc" work.RISC_V_Single_Cycle_tb 
+# Start time: 12:24:53 on Apr 09,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.RISC_V_Single_Cycle_tb(fast)
+# Loading work.RISC_V_Single_Cycle(fast)
+# Loading work.Control_Unit(fast)
+# Loading work.Control_Signals(fast)
+# Loading work.ALU_Decoder(fast)
+# Loading work.Data_Path(fast)
+# Loading work.Reg_param(fast)
+# Loading work.Program_Memory(fast)
+# Loading work.rv32i_imm_gen(fast)
+# Loading work.Reg_File(fast)
+# Loading work.Decoder_Onehot(fast)
+# Loading work.Reg_param(fast__1)
+# Loading work.Reg_param(fast__2)
+# Loading work.Mux(fast)
+# Loading work.Mux4x1(fast)
+# Loading work.ALU(fast)
+# Loading work.Mux2x1(fast)
+# Loading work.Memory_Controller(fast)
+# Loading work.Data_Memory(fast)
+# Loading work.UART(fast)
+# Loading work.Register(fast)
+# Loading work.UART_TX(fast)
+# Loading work.Bit_Rate_Pulse(fast)
+# Loading work.FSM_UART_tx(fast)
+# Loading work.Counter_Param(fast)
+# Loading work.TXshift_register(fast)
+# Loading work.FF_D_2enable(fast)
+# Loading work.UART_RX(fast)
+# Loading work.Bit_Rate_Pulse(fast__1)
+# Loading work.FSM_UART_rx(fast)
+# Loading work.FF_D_enable(fast)
+# Loading work.RXshift_register(fast)
+# Loading work.GPIO(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (2) for port 'Mem_to_Reg_o'. The port definition is at: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/Control_Unit.v(21).
+#    Time: 0 ps  Iteration: 0  Instance: /RISC_V_Single_Cycle_tb/UUT/Control File: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/RISC_V_Single_Cycle.v Line: 41
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (4) for port 'ALU_Op'. The port definition is at: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/ALU_Decoder.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /RISC_V_Single_Cycle_tb/UUT/Control/Operation File: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/Control_Unit.v Line: 54
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (2) for port 'Selector'. The port definition is at: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/Mux2x1.v(9).
+#    Time: 0 ps  Iteration: 0  Instance: /RISC_V_Single_Cycle_tb/UUT/DataPath/Write_data_mux File: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/Data_Path.v Line: 138
+add wave -position end  sim:/RISC_V_Single_Cycle_tb/UUT/DataPath/Pc/Q
+add wave -position end  sim:/RISC_V_Single_Cycle_tb/UUT/DataPath/ROM/ADDRIn
+add wave -position end  sim:/RISC_V_Single_Cycle_tb/UUT/DataPath/ROM/Instruction
+add wave -position end  sim:/RISC_V_Single_Cycle_tb/UUT/DataPath/Reg_file/ra/Q
+add wave -position end  sim:/RISC_V_Single_Cycle_tb/UUT/DataPath/Reg_file/sp/Q
+add wave -position end  sim:/RISC_V_Single_Cycle_tb/UUT/DataPath/Reg_file/t0/Q
+add wave -position end  sim:/RISC_V_Single_Cycle_tb/UUT/DataPath/Reg_file/a0/Q
+add wave -position end  sim:/RISC_V_Single_Cycle_tb/UUT/DataPath/Reg_file/a2/Q
+add wave -position end  sim:/RISC_V_Single_Cycle_tb/UUT/DataPath/Reg_file/s4/Q
+add wave -position end  sim:/RISC_V_Single_Cycle_tb/UUT/Control/ALU_Control
+add wave -position end  sim:/RISC_V_Single_Cycle_tb/UUT/Control/ALU_Op
+add wave -position end  sim:/RISC_V_Single_Cycle_tb/UUT/Control/ALU_Src_a
+add wave -position end  sim:/RISC_V_Single_Cycle_tb/UUT/Control/ALU_Src_b
+add wave -position end  sim:/RISC_V_Single_Cycle_tb/UUT/Control/Branch_and_o
+add wave -position end  sim:/RISC_V_Single_Cycle_tb/UUT/Control/JAL_o
+add wave -position end  sim:/RISC_V_Single_Cycle_tb/UUT/Control/Mem_Read_o
+add wave -position end  sim:/RISC_V_Single_Cycle_tb/UUT/Control/Mem_to_Reg_o
+add wave -position end  sim:/RISC_V_Single_Cycle_tb/UUT/Control/Mem_Write_o
+run
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/proj_modelsim/sim.do
+# Compile of ALU.v was successful.
+# Compile of ALU_Decoder.v was successful.
+# Compile of Bit_Rate_Pulse.v was successful.
+# Compile of Control_Signals.v was successful.
+# Compile of Control_Unit.v was successful.
+# Compile of Counter_Param.v was successful.
+# Compile of Data_Memory.v was successful.
+# Compile of Data_Path.v was successful.
+# Compile of Decoder_Onehot.v was successful.
+# Compile of FF_D_2enable.v was successful.
+# Compile of FF_D_enable.v was successful.
+# Compile of FSM_UART_rx.v was successful.
+# Compile of FSM_UART_tx.v was successful.
+# Compile of GPIO.v was successful.
+# Compile of Memory_Controller.v was successful.
+# Compile of Mux.v was successful.
+# Compile of Mux2x1.v was successful.
+# Compile of Mux4x1.v was successful.
+# Compile of Program_Memory.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_param.v was successful.
+# Compile of Register.v was successful.
+# Compile of RISC_V_Single_Cycle.v was successful.
+# Compile of RISC_V_Single_Cycle_tb.v was successful.
+# Compile of rv32i_imm_gen.v was successful.
+# Compile of RXshift_register.v was successful.
+# Compile of shift_left_one.v was successful.
+# Compile of TXshift_register.v was successful.
+# Compile of UART.v was successful.
+# Compile of UART_RX.v was successful.
+# Compile of UART_TX.v was successful.
+# Compile of RISC_V_Single_Cycle_UART_tb.v was successful.
+# 32 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.RISC_V_Single_Cycle_tb
+# End time: 12:43:48 on Apr 09,2023, Elapsed time: 0:18:55
+# Errors: 0, Warnings: 6
+# vsim -voptargs="+acc" work.RISC_V_Single_Cycle_tb 
+# Start time: 12:43:48 on Apr 09,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "FSM_UART_rx(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "FSM_UART_tx(fast)".
+# ** Warning: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/RISC_V_Single_Cycle_tb.v(19): (vopt-2685) [TFMPC] - Too few port connections for 'UUT'.  Expected 7, found 6.
+# ** Warning: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/RISC_V_Single_Cycle_tb.v(19): (vopt-2718) [TFMPC] - Missing connection for port 'clk_out'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading work.RISC_V_Single_Cycle_tb(fast)
+# Loading work.RISC_V_Single_Cycle(fast)
+# Loading work.Control_Unit(fast)
+# Loading work.Control_Signals(fast)
+# Loading work.ALU_Decoder(fast)
+# Loading work.Data_Path(fast)
+# Loading work.Reg_param(fast)
+# Loading work.Program_Memory(fast)
+# Loading work.rv32i_imm_gen(fast)
+# Loading work.Reg_File(fast)
+# Loading work.Decoder_Onehot(fast)
+# Loading work.Reg_param(fast__1)
+# Loading work.Reg_param(fast__2)
+# Loading work.Mux(fast)
+# Loading work.Mux4x1(fast)
+# Loading work.ALU(fast)
+# Loading work.Mux2x1(fast)
+# Loading work.Memory_Controller(fast)
+# Loading work.Data_Memory(fast)
+# Loading work.UART(fast)
+# Loading work.Register(fast)
+# Loading work.UART_TX(fast)
+# Loading work.Bit_Rate_Pulse(fast)
+# Loading work.FSM_UART_tx(fast)
+# Loading work.Counter_Param(fast)
+# Loading work.TXshift_register(fast)
+# Loading work.FF_D_2enable(fast)
+# Loading work.UART_RX(fast)
+# Loading work.Bit_Rate_Pulse(fast__1)
+# Loading work.FSM_UART_rx(fast)
+# Loading work.FF_D_enable(fast)
+# Loading work.RXshift_register(fast)
+# Loading work.GPIO(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (2) for port 'Mem_to_Reg_o'. The port definition is at: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/Control_Unit.v(21).
+#    Time: 0 ps  Iteration: 0  Instance: /RISC_V_Single_Cycle_tb/UUT/Control File: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/RISC_V_Single_Cycle.v Line: 41
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (4) for port 'ALU_Op'. The port definition is at: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/ALU_Decoder.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /RISC_V_Single_Cycle_tb/UUT/Control/Operation File: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/Control_Unit.v Line: 54
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (2) for port 'Selector'. The port definition is at: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/Mux2x1.v(9).
+#    Time: 0 ps  Iteration: 0  Instance: /RISC_V_Single_Cycle_tb/UUT/DataPath/Write_data_mux File: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/Data_Path.v Line: 138
+source sim.do
+run
+add wave -position 0  sim:/RISC_V_Single_Cycle_tb/clk
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading work.RISC_V_Single_Cycle_tb(fast)
+# Loading work.RISC_V_Single_Cycle(fast)
+# Loading work.Control_Unit(fast)
+# Loading work.Control_Signals(fast)
+# Loading work.ALU_Decoder(fast)
+# Loading work.Data_Path(fast)
+# Loading work.Reg_param(fast)
+# Loading work.Program_Memory(fast)
+# Loading work.rv32i_imm_gen(fast)
+# Loading work.Reg_File(fast)
+# Loading work.Decoder_Onehot(fast)
+# Loading work.Reg_param(fast__1)
+# Loading work.Reg_param(fast__2)
+# Loading work.Mux(fast)
+# Loading work.Mux4x1(fast)
+# Loading work.ALU(fast)
+# Loading work.Mux2x1(fast)
+# Loading work.Memory_Controller(fast)
+# Loading work.Data_Memory(fast)
+# Loading work.UART(fast)
+# Loading work.Register(fast)
+# Loading work.UART_TX(fast)
+# Loading work.Bit_Rate_Pulse(fast)
+# Loading work.FSM_UART_tx(fast)
+# Loading work.Counter_Param(fast)
+# Loading work.TXshift_register(fast)
+# Loading work.FF_D_2enable(fast)
+# Loading work.UART_RX(fast)
+# Loading work.Bit_Rate_Pulse(fast__1)
+# Loading work.FSM_UART_rx(fast)
+# Loading work.FF_D_enable(fast)
+# Loading work.RXshift_register(fast)
+# Loading work.GPIO(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (2) for port 'Mem_to_Reg_o'. The port definition is at: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/Control_Unit.v(21).
+#    Time: 0 ps  Iteration: 0  Instance: /RISC_V_Single_Cycle_tb/UUT/Control File: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/RISC_V_Single_Cycle.v Line: 41
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (4) for port 'ALU_Op'. The port definition is at: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/ALU_Decoder.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /RISC_V_Single_Cycle_tb/UUT/Control/Operation File: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/Control_Unit.v Line: 54
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (2) for port 'Selector'. The port definition is at: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/Mux2x1.v(9).
+#    Time: 0 ps  Iteration: 0  Instance: /RISC_V_Single_Cycle_tb/UUT/DataPath/Write_data_mux File: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/Data_Path.v Line: 138
+run
+add wave -position end  sim:/RISC_V_Single_Cycle_tb/UUT/Control/Reg_Write_o
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading work.RISC_V_Single_Cycle_tb(fast)
+# Loading work.RISC_V_Single_Cycle(fast)
+# Loading work.Control_Unit(fast)
+# Loading work.Control_Signals(fast)
+# Loading work.ALU_Decoder(fast)
+# Loading work.Data_Path(fast)
+# Loading work.Reg_param(fast)
+# Loading work.Program_Memory(fast)
+# Loading work.rv32i_imm_gen(fast)
+# Loading work.Reg_File(fast)
+# Loading work.Decoder_Onehot(fast)
+# Loading work.Reg_param(fast__1)
+# Loading work.Reg_param(fast__2)
+# Loading work.Mux(fast)
+# Loading work.Mux4x1(fast)
+# Loading work.ALU(fast)
+# Loading work.Mux2x1(fast)
+# Loading work.Memory_Controller(fast)
+# Loading work.Data_Memory(fast)
+# Loading work.UART(fast)
+# Loading work.Register(fast)
+# Loading work.UART_TX(fast)
+# Loading work.Bit_Rate_Pulse(fast)
+# Loading work.FSM_UART_tx(fast)
+# Loading work.Counter_Param(fast)
+# Loading work.TXshift_register(fast)
+# Loading work.FF_D_2enable(fast)
+# Loading work.UART_RX(fast)
+# Loading work.Bit_Rate_Pulse(fast__1)
+# Loading work.FSM_UART_rx(fast)
+# Loading work.FF_D_enable(fast)
+# Loading work.RXshift_register(fast)
+# Loading work.GPIO(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (2) for port 'Mem_to_Reg_o'. The port definition is at: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/Control_Unit.v(21).
+#    Time: 0 ps  Iteration: 0  Instance: /RISC_V_Single_Cycle_tb/UUT/Control File: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/RISC_V_Single_Cycle.v Line: 41
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (4) for port 'ALU_Op'. The port definition is at: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/ALU_Decoder.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /RISC_V_Single_Cycle_tb/UUT/Control/Operation File: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/Control_Unit.v Line: 54
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (2) for port 'Selector'. The port definition is at: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/Mux2x1.v(9).
+#    Time: 0 ps  Iteration: 0  Instance: /RISC_V_Single_Cycle_tb/UUT/DataPath/Write_data_mux File: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/Data_Path.v Line: 138
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+add wave -position end  sim:/RISC_V_Single_Cycle_tb/UUT/Control/Branch_and_o
+add wave -position end  sim:/RISC_V_Single_Cycle_tb/UUT/Control/Branch_w
+add wave -position end  sim:/RISC_V_Single_Cycle_tb/UUT/Control/Zero
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading work.RISC_V_Single_Cycle_tb(fast)
+# Loading work.RISC_V_Single_Cycle(fast)
+# Loading work.Control_Unit(fast)
+# Loading work.Control_Signals(fast)
+# Loading work.ALU_Decoder(fast)
+# Loading work.Data_Path(fast)
+# Loading work.Reg_param(fast)
+# Loading work.Program_Memory(fast)
+# Loading work.rv32i_imm_gen(fast)
+# Loading work.Reg_File(fast)
+# Loading work.Decoder_Onehot(fast)
+# Loading work.Reg_param(fast__1)
+# Loading work.Reg_param(fast__2)
+# Loading work.Mux(fast)
+# Loading work.Mux4x1(fast)
+# Loading work.ALU(fast)
+# Loading work.Mux2x1(fast)
+# Loading work.Memory_Controller(fast)
+# Loading work.Data_Memory(fast)
+# Loading work.UART(fast)
+# Loading work.Register(fast)
+# Loading work.UART_TX(fast)
+# Loading work.Bit_Rate_Pulse(fast)
+# Loading work.FSM_UART_tx(fast)
+# Loading work.Counter_Param(fast)
+# Loading work.TXshift_register(fast)
+# Loading work.FF_D_2enable(fast)
+# Loading work.UART_RX(fast)
+# Loading work.Bit_Rate_Pulse(fast__1)
+# Loading work.FSM_UART_rx(fast)
+# Loading work.FF_D_enable(fast)
+# Loading work.RXshift_register(fast)
+# Loading work.GPIO(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (2) for port 'Mem_to_Reg_o'. The port definition is at: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/Control_Unit.v(21).
+#    Time: 0 ps  Iteration: 0  Instance: /RISC_V_Single_Cycle_tb/UUT/Control File: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/RISC_V_Single_Cycle.v Line: 41
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (4) for port 'ALU_Op'. The port definition is at: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/ALU_Decoder.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /RISC_V_Single_Cycle_tb/UUT/Control/Operation File: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/Control_Unit.v Line: 54
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (2) for port 'Selector'. The port definition is at: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/Mux2x1.v(9).
+#    Time: 0 ps  Iteration: 0  Instance: /RISC_V_Single_Cycle_tb/UUT/DataPath/Write_data_mux File: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/Data_Path.v Line: 138
+run
+run
+run
+run
+run
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/proj_modelsim/sim.do
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/proj_modelsim/sim.do
+# Compile of ALU.v was successful.
+# Compile of ALU_Decoder.v was successful.
+# Compile of Bit_Rate_Pulse.v was successful.
+# Compile of Control_Signals.v was successful with warnings.
+# Compile of Control_Unit.v was successful.
+# Compile of Counter_Param.v was successful.
+# Compile of Data_Memory.v was successful.
+# Compile of Data_Path.v was successful.
+# Compile of Decoder_Onehot.v was successful.
+# Compile of FF_D_2enable.v was successful.
+# Compile of FF_D_enable.v was successful.
+# Compile of FSM_UART_rx.v was successful.
+# Compile of FSM_UART_tx.v was successful.
+# Compile of GPIO.v was successful.
+# Compile of Memory_Controller.v was successful.
+# Compile of Mux.v was successful.
+# Compile of Mux2x1.v was successful.
+# Compile of Mux4x1.v was successful.
+# Compile of Program_Memory.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_param.v was successful.
+# Compile of Register.v was successful.
+# Compile of RISC_V_Single_Cycle.v was successful.
+# Compile of RISC_V_Single_Cycle_tb.v was successful.
+# Compile of rv32i_imm_gen.v was successful.
+# Compile of RXshift_register.v was successful.
+# Compile of shift_left_one.v was successful.
+# Compile of TXshift_register.v was successful.
+# Compile of UART.v was successful.
+# Compile of UART_RX.v was successful.
+# Compile of UART_TX.v was successful.
+# Compile of RISC_V_Single_Cycle_UART_tb.v was successful.
+# 32 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.RISC_V_Single_Cycle_tb
+# End time: 14:48:45 on Apr 09,2023, Elapsed time: 2:04:57
+# Errors: 0, Warnings: 7
+# vsim -voptargs="+acc" work.RISC_V_Single_Cycle_tb 
+# Start time: 14:48:45 on Apr 09,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.RISC_V_Single_Cycle_tb(fast)
+# Loading work.RISC_V_Single_Cycle(fast)
+# Loading work.Control_Unit(fast)
+# Loading work.Control_Signals(fast)
+# Loading work.ALU_Decoder(fast)
+# Loading work.Data_Path(fast)
+# Loading work.Reg_param(fast)
+# Loading work.Program_Memory(fast)
+# Loading work.rv32i_imm_gen(fast)
+# Loading work.Reg_File(fast)
+# Loading work.Decoder_Onehot(fast)
+# Loading work.Reg_param(fast__1)
+# Loading work.Reg_param(fast__2)
+# Loading work.Mux(fast)
+# Loading work.Mux4x1(fast)
+# Loading work.ALU(fast)
+# Loading work.Mux2x1(fast)
+# Loading work.Memory_Controller(fast)
+# Loading work.Data_Memory(fast)
+# Loading work.UART(fast)
+# Loading work.Register(fast)
+# Loading work.UART_TX(fast)
+# Loading work.Bit_Rate_Pulse(fast)
+# Loading work.FSM_UART_tx(fast)
+# Loading work.Counter_Param(fast)
+# Loading work.TXshift_register(fast)
+# Loading work.FF_D_2enable(fast)
+# Loading work.UART_RX(fast)
+# Loading work.Bit_Rate_Pulse(fast__1)
+# Loading work.FSM_UART_rx(fast)
+# Loading work.FF_D_enable(fast)
+# Loading work.RXshift_register(fast)
+# Loading work.GPIO(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (2) for port 'Mem_to_Reg_o'. The port definition is at: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/Control_Unit.v(21).
+#    Time: 0 ps  Iteration: 0  Instance: /RISC_V_Single_Cycle_tb/UUT/Control File: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/RISC_V_Single_Cycle.v Line: 41
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (4) for port 'ALU_Op'. The port definition is at: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/ALU_Decoder.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /RISC_V_Single_Cycle_tb/UUT/Control/Operation File: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/Control_Unit.v Line: 55
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (2) for port 'Selector'. The port definition is at: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/Mux2x1.v(9).
+#    Time: 0 ps  Iteration: 0  Instance: /RISC_V_Single_Cycle_tb/UUT/DataPath/Write_data_mux File: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/Data_Path.v Line: 138
+source sim.do
+run
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.RISC_V_Single_Cycle_tb(fast)
+# Loading work.RISC_V_Single_Cycle(fast)
+# Loading work.Control_Unit(fast)
+# Loading work.Control_Signals(fast)
+# Loading work.ALU_Decoder(fast)
+# Loading work.Data_Path(fast)
+# Loading work.Reg_param(fast)
+# Loading work.Program_Memory(fast)
+# Loading work.rv32i_imm_gen(fast)
+# Loading work.Reg_File(fast)
+# Loading work.Decoder_Onehot(fast)
+# Loading work.Reg_param(fast__1)
+# Loading work.Reg_param(fast__2)
+# Loading work.Mux(fast)
+# Loading work.Mux4x1(fast)
+# Loading work.ALU(fast)
+# Loading work.Mux2x1(fast)
+# Loading work.Memory_Controller(fast)
+# Loading work.Data_Memory(fast)
+# Loading work.UART(fast)
+# Loading work.Register(fast)
+# Loading work.UART_TX(fast)
+# Loading work.Bit_Rate_Pulse(fast)
+# Loading work.FSM_UART_tx(fast)
+# Loading work.Counter_Param(fast)
+# Loading work.TXshift_register(fast)
+# Loading work.FF_D_2enable(fast)
+# Loading work.UART_RX(fast)
+# Loading work.Bit_Rate_Pulse(fast__1)
+# Loading work.FSM_UART_rx(fast)
+# Loading work.FF_D_enable(fast)
+# Loading work.RXshift_register(fast)
+# Loading work.GPIO(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (2) for port 'Mem_to_Reg_o'. The port definition is at: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/Control_Unit.v(21).
+#    Time: 0 ps  Iteration: 0  Instance: /RISC_V_Single_Cycle_tb/UUT/Control File: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/RISC_V_Single_Cycle.v Line: 41
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (4) for port 'ALU_Op'. The port definition is at: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/ALU_Decoder.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /RISC_V_Single_Cycle_tb/UUT/Control/Operation File: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/Control_Unit.v Line: 55
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (2) for port 'Selector'. The port definition is at: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/Mux2x1.v(9).
+#    Time: 0 ps  Iteration: 0  Instance: /RISC_V_Single_Cycle_tb/UUT/DataPath/Write_data_mux File: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/Data_Path.v Line: 138
+add wave -position 22  sim:/RISC_V_Single_Cycle_tb/UUT/Control/Branch_w_n
+run
+run
+run
+run
+run
+add wave -position end  sim:/RISC_V_Single_Cycle_tb/UUT/Control/Funct7
+add wave -position end  sim:/RISC_V_Single_Cycle_tb/UUT/Control/Funct3
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.RISC_V_Single_Cycle_tb(fast)
+# Loading work.RISC_V_Single_Cycle(fast)
+# Loading work.Control_Unit(fast)
+# Loading work.Control_Signals(fast)
+# Loading work.ALU_Decoder(fast)
+# Loading work.Data_Path(fast)
+# Loading work.Reg_param(fast)
+# Loading work.Program_Memory(fast)
+# Loading work.rv32i_imm_gen(fast)
+# Loading work.Reg_File(fast)
+# Loading work.Decoder_Onehot(fast)
+# Loading work.Reg_param(fast__1)
+# Loading work.Reg_param(fast__2)
+# Loading work.Mux(fast)
+# Loading work.Mux4x1(fast)
+# Loading work.ALU(fast)
+# Loading work.Mux2x1(fast)
+# Loading work.Memory_Controller(fast)
+# Loading work.Data_Memory(fast)
+# Loading work.UART(fast)
+# Loading work.Register(fast)
+# Loading work.UART_TX(fast)
+# Loading work.Bit_Rate_Pulse(fast)
+# Loading work.FSM_UART_tx(fast)
+# Loading work.Counter_Param(fast)
+# Loading work.TXshift_register(fast)
+# Loading work.FF_D_2enable(fast)
+# Loading work.UART_RX(fast)
+# Loading work.Bit_Rate_Pulse(fast__1)
+# Loading work.FSM_UART_rx(fast)
+# Loading work.FF_D_enable(fast)
+# Loading work.RXshift_register(fast)
+# Loading work.GPIO(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (2) for port 'Mem_to_Reg_o'. The port definition is at: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/Control_Unit.v(21).
+#    Time: 0 ps  Iteration: 0  Instance: /RISC_V_Single_Cycle_tb/UUT/Control File: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/RISC_V_Single_Cycle.v Line: 41
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (4) for port 'ALU_Op'. The port definition is at: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/ALU_Decoder.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /RISC_V_Single_Cycle_tb/UUT/Control/Operation File: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/Control_Unit.v Line: 55
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (2) for port 'Selector'. The port definition is at: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/Mux2x1.v(9).
+#    Time: 0 ps  Iteration: 0  Instance: /RISC_V_Single_Cycle_tb/UUT/DataPath/Write_data_mux File: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/Data_Path.v Line: 138
+run
+run
+run
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/proj_modelsim/sim.do
+# Compile of ALU.v was successful.
+# Compile of ALU_Decoder.v was successful.
+# Compile of Bit_Rate_Pulse.v was successful.
+# Compile of Control_Signals.v was successful with warnings.
+# Compile of Control_Unit.v was successful.
+# Compile of Counter_Param.v was successful.
+# Compile of Data_Memory.v was successful.
+# Compile of Data_Path.v was successful.
+# Compile of Decoder_Onehot.v was successful.
+# Compile of FF_D_2enable.v was successful.
+# Compile of FF_D_enable.v was successful.
+# Compile of FSM_UART_rx.v was successful.
+# Compile of FSM_UART_tx.v was successful.
+# Compile of GPIO.v was successful.
+# Compile of Memory_Controller.v was successful.
+# Compile of Mux.v was successful.
+# Compile of Mux2x1.v was successful.
+# Compile of Mux4x1.v was successful.
+# Compile of Program_Memory.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_param.v was successful.
+# Compile of Register.v was successful.
+# Compile of RISC_V_Single_Cycle.v was successful.
+# Compile of RISC_V_Single_Cycle_tb.v was successful.
+# Compile of rv32i_imm_gen.v was successful.
+# Compile of RXshift_register.v was successful.
+# Compile of shift_left_one.v was successful.
+# Compile of TXshift_register.v was successful.
+# Compile of UART.v was successful.
+# Compile of UART_RX.v was successful.
+# Compile of UART_TX.v was successful.
+# Compile of RISC_V_Single_Cycle_UART_tb.v was successful.
+# 32 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.RISC_V_Single_Cycle_tb
+# End time: 15:01:04 on Apr 09,2023, Elapsed time: 0:12:19
+# Errors: 0, Warnings: 5
+# vsim -voptargs="+acc" work.RISC_V_Single_Cycle_tb 
+# Start time: 15:01:04 on Apr 09,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.RISC_V_Single_Cycle_tb(fast)
+# Loading work.RISC_V_Single_Cycle(fast)
+# Loading work.Control_Unit(fast)
+# Loading work.Control_Signals(fast)
+# Loading work.ALU_Decoder(fast)
+# Loading work.Data_Path(fast)
+# Loading work.Reg_param(fast)
+# Loading work.Program_Memory(fast)
+# Loading work.rv32i_imm_gen(fast)
+# Loading work.Reg_File(fast)
+# Loading work.Decoder_Onehot(fast)
+# Loading work.Reg_param(fast__1)
+# Loading work.Reg_param(fast__2)
+# Loading work.Mux(fast)
+# Loading work.Mux4x1(fast)
+# Loading work.ALU(fast)
+# Loading work.Mux2x1(fast)
+# Loading work.Memory_Controller(fast)
+# Loading work.Data_Memory(fast)
+# Loading work.UART(fast)
+# Loading work.Register(fast)
+# Loading work.UART_TX(fast)
+# Loading work.Bit_Rate_Pulse(fast)
+# Loading work.FSM_UART_tx(fast)
+# Loading work.Counter_Param(fast)
+# Loading work.TXshift_register(fast)
+# Loading work.FF_D_2enable(fast)
+# Loading work.UART_RX(fast)
+# Loading work.Bit_Rate_Pulse(fast__1)
+# Loading work.FSM_UART_rx(fast)
+# Loading work.FF_D_enable(fast)
+# Loading work.RXshift_register(fast)
+# Loading work.GPIO(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (2) for port 'Mem_to_Reg_o'. The port definition is at: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/Control_Unit.v(21).
+#    Time: 0 ps  Iteration: 0  Instance: /RISC_V_Single_Cycle_tb/UUT/Control File: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/RISC_V_Single_Cycle.v Line: 41
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (4) for port 'ALU_Op'. The port definition is at: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/ALU_Decoder.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /RISC_V_Single_Cycle_tb/UUT/Control/Operation File: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/Control_Unit.v Line: 55
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (2) for port 'Selector'. The port definition is at: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/Mux2x1.v(9).
+#    Time: 0 ps  Iteration: 0  Instance: /RISC_V_Single_Cycle_tb/UUT/DataPath/Write_data_mux File: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/Data_Path.v Line: 138
+source sim.do
+run
+run
+add wave -position end  sim:/RISC_V_Single_Cycle_tb/UUT/Control/State_and_Signals/control_values
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.RISC_V_Single_Cycle_tb(fast)
+# Loading work.RISC_V_Single_Cycle(fast)
+# Loading work.Control_Unit(fast)
+# Loading work.Control_Signals(fast)
+# Loading work.ALU_Decoder(fast)
+# Loading work.Data_Path(fast)
+# Loading work.Reg_param(fast)
+# Loading work.Program_Memory(fast)
+# Loading work.rv32i_imm_gen(fast)
+# Loading work.Reg_File(fast)
+# Loading work.Decoder_Onehot(fast)
+# Loading work.Reg_param(fast__1)
+# Loading work.Reg_param(fast__2)
+# Loading work.Mux(fast)
+# Loading work.Mux4x1(fast)
+# Loading work.ALU(fast)
+# Loading work.Mux2x1(fast)
+# Loading work.Memory_Controller(fast)
+# Loading work.Data_Memory(fast)
+# Loading work.UART(fast)
+# Loading work.Register(fast)
+# Loading work.UART_TX(fast)
+# Loading work.Bit_Rate_Pulse(fast)
+# Loading work.FSM_UART_tx(fast)
+# Loading work.Counter_Param(fast)
+# Loading work.TXshift_register(fast)
+# Loading work.FF_D_2enable(fast)
+# Loading work.UART_RX(fast)
+# Loading work.Bit_Rate_Pulse(fast__1)
+# Loading work.FSM_UART_rx(fast)
+# Loading work.FF_D_enable(fast)
+# Loading work.RXshift_register(fast)
+# Loading work.GPIO(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (2) for port 'Mem_to_Reg_o'. The port definition is at: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/Control_Unit.v(21).
+#    Time: 0 ps  Iteration: 0  Instance: /RISC_V_Single_Cycle_tb/UUT/Control File: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/RISC_V_Single_Cycle.v Line: 41
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (4) for port 'ALU_Op'. The port definition is at: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/ALU_Decoder.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /RISC_V_Single_Cycle_tb/UUT/Control/Operation File: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/Control_Unit.v Line: 55
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (2) for port 'Selector'. The port definition is at: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/Mux2x1.v(9).
+#    Time: 0 ps  Iteration: 0  Instance: /RISC_V_Single_Cycle_tb/UUT/DataPath/Write_data_mux File: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/Data_Path.v Line: 138
+run
+run
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/proj_modelsim/sim.do
+# Compile of ALU.v was successful.
+# Compile of ALU_Decoder.v was successful.
+# Compile of Bit_Rate_Pulse.v was successful.
+# Compile of Control_Signals.v was successful.
+# Compile of Control_Unit.v was successful.
+# Compile of Counter_Param.v was successful.
+# Compile of Data_Memory.v was successful.
+# Compile of Data_Path.v was successful.
+# Compile of Decoder_Onehot.v was successful.
+# Compile of FF_D_2enable.v was successful.
+# Compile of FF_D_enable.v was successful.
+# Compile of FSM_UART_rx.v was successful.
+# Compile of FSM_UART_tx.v was successful.
+# Compile of GPIO.v was successful.
+# Compile of Memory_Controller.v was successful.
+# Compile of Mux.v was successful.
+# Compile of Mux2x1.v was successful.
+# Compile of Mux4x1.v was successful.
+# Compile of Program_Memory.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_param.v was successful.
+# Compile of Register.v was successful.
+# Compile of RISC_V_Single_Cycle.v was successful.
+# Compile of RISC_V_Single_Cycle_tb.v was successful.
+# Compile of rv32i_imm_gen.v was successful.
+# Compile of RXshift_register.v was successful.
+# Compile of shift_left_one.v was successful.
+# Compile of TXshift_register.v was successful.
+# Compile of UART.v was successful.
+# Compile of UART_RX.v was successful.
+# Compile of UART_TX.v was successful.
+# Compile of RISC_V_Single_Cycle_UART_tb.v was successful.
+# 32 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.RISC_V_Single_Cycle_tb
+# End time: 16:06:54 on Apr 09,2023, Elapsed time: 1:05:50
+# Errors: 0, Warnings: 5
+# vsim -voptargs="+acc" work.RISC_V_Single_Cycle_tb 
+# Start time: 16:06:54 on Apr 09,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.RISC_V_Single_Cycle_tb(fast)
+# Loading work.RISC_V_Single_Cycle(fast)
+# Loading work.Control_Unit(fast)
+# Loading work.Control_Signals(fast)
+# Loading work.ALU_Decoder(fast)
+# Loading work.Data_Path(fast)
+# Loading work.Reg_param(fast)
+# Loading work.Program_Memory(fast)
+# Loading work.rv32i_imm_gen(fast)
+# Loading work.Reg_File(fast)
+# Loading work.Decoder_Onehot(fast)
+# Loading work.Reg_param(fast__1)
+# Loading work.Reg_param(fast__2)
+# Loading work.Mux(fast)
+# Loading work.Mux4x1(fast)
+# Loading work.ALU(fast)
+# Loading work.Mux2x1(fast)
+# Loading work.Memory_Controller(fast)
+# Loading work.Data_Memory(fast)
+# Loading work.UART(fast)
+# Loading work.Register(fast)
+# Loading work.UART_TX(fast)
+# Loading work.Bit_Rate_Pulse(fast)
+# Loading work.FSM_UART_tx(fast)
+# Loading work.Counter_Param(fast)
+# Loading work.TXshift_register(fast)
+# Loading work.FF_D_2enable(fast)
+# Loading work.UART_RX(fast)
+# Loading work.Bit_Rate_Pulse(fast__1)
+# Loading work.FSM_UART_rx(fast)
+# Loading work.FF_D_enable(fast)
+# Loading work.RXshift_register(fast)
+# Loading work.GPIO(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (2) for port 'Mem_to_Reg_o'. The port definition is at: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/Control_Unit.v(21).
+#    Time: 0 ps  Iteration: 0  Instance: /RISC_V_Single_Cycle_tb/UUT/Control File: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/RISC_V_Single_Cycle.v Line: 41
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (4) for port 'ALU_Op'. The port definition is at: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/ALU_Decoder.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /RISC_V_Single_Cycle_tb/UUT/Control/Operation File: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/Control_Unit.v Line: 55
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (2) for port 'Selector'. The port definition is at: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/Mux2x1.v(9).
+#    Time: 0 ps  Iteration: 0  Instance: /RISC_V_Single_Cycle_tb/UUT/DataPath/Write_data_mux File: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/Data_Path.v Line: 138
+source sim.do
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+add wave -position 10  sim:/RISC_V_Single_Cycle_tb/UUT/DataPath/Reg_file/s4/Q
+add wave -position 10  sim:/RISC_V_Single_Cycle_tb/UUT/DataPath/Reg_file/s5/Q
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.RISC_V_Single_Cycle_tb(fast)
+# Loading work.RISC_V_Single_Cycle(fast)
+# Loading work.Control_Unit(fast)
+# Loading work.Control_Signals(fast)
+# Loading work.ALU_Decoder(fast)
+# Loading work.Data_Path(fast)
+# Loading work.Reg_param(fast)
+# Loading work.Program_Memory(fast)
+# Loading work.rv32i_imm_gen(fast)
+# Loading work.Reg_File(fast)
+# Loading work.Decoder_Onehot(fast)
+# Loading work.Reg_param(fast__1)
+# Loading work.Reg_param(fast__2)
+# Loading work.Mux(fast)
+# Loading work.Mux4x1(fast)
+# Loading work.ALU(fast)
+# Loading work.Mux2x1(fast)
+# Loading work.Memory_Controller(fast)
+# Loading work.Data_Memory(fast)
+# Loading work.UART(fast)
+# Loading work.Register(fast)
+# Loading work.UART_TX(fast)
+# Loading work.Bit_Rate_Pulse(fast)
+# Loading work.FSM_UART_tx(fast)
+# Loading work.Counter_Param(fast)
+# Loading work.TXshift_register(fast)
+# Loading work.FF_D_2enable(fast)
+# Loading work.UART_RX(fast)
+# Loading work.Bit_Rate_Pulse(fast__1)
+# Loading work.FSM_UART_rx(fast)
+# Loading work.FF_D_enable(fast)
+# Loading work.RXshift_register(fast)
+# Loading work.GPIO(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (2) for port 'Mem_to_Reg_o'. The port definition is at: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/Control_Unit.v(21).
+#    Time: 0 ps  Iteration: 0  Instance: /RISC_V_Single_Cycle_tb/UUT/Control File: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/RISC_V_Single_Cycle.v Line: 41
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (4) for port 'ALU_Op'. The port definition is at: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/ALU_Decoder.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /RISC_V_Single_Cycle_tb/UUT/Control/Operation File: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/Control_Unit.v Line: 55
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (2) for port 'Selector'. The port definition is at: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/Mux2x1.v(9).
+#    Time: 0 ps  Iteration: 0  Instance: /RISC_V_Single_Cycle_tb/UUT/DataPath/Write_data_mux File: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/Data_Path.v Line: 138
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of ALU.v was successful.
+# Compile of ALU_Decoder.v was successful.
+# Compile of Bit_Rate_Pulse.v was successful.
+# Compile of Control_Signals.v was successful.
+# Compile of Control_Unit.v was successful.
+# Compile of Counter_Param.v was successful.
+# Compile of Data_Memory.v was successful.
+# Compile of Data_Path.v was successful.
+# Compile of Decoder_Onehot.v was successful.
+# Compile of FF_D_2enable.v was successful.
+# Compile of FF_D_enable.v was successful.
+# Compile of FSM_UART_rx.v was successful.
+# Compile of FSM_UART_tx.v was successful.
+# Compile of GPIO.v was successful.
+# Compile of Memory_Controller.v was successful.
+# Compile of Mux.v was successful.
+# Compile of Mux2x1.v was successful.
+# Compile of Mux4x1.v was successful.
+# Compile of Program_Memory.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_param.v was successful.
+# Compile of Register.v was successful.
+# Compile of RISC_V_Single_Cycle.v was successful.
+# Compile of RISC_V_Single_Cycle_tb.v was successful.
+# Compile of rv32i_imm_gen.v was successful.
+# Compile of RXshift_register.v was successful.
+# Compile of shift_left_one.v was successful.
+# Compile of TXshift_register.v was successful.
+# Compile of UART.v was successful.
+# Compile of UART_RX.v was successful.
+# Compile of UART_TX.v was successful.
+# Compile of RISC_V_Single_Cycle_UART_tb.v was successful.
+# 32 compiles, 0 failed with no errors.
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/proj_modelsim/sim.do
+vsim -voptargs=+acc work.RISC_V_Single_Cycle_tb
+# End time: 18:54:23 on Apr 09,2023, Elapsed time: 2:47:29
+# Errors: 0, Warnings: 5
+# vsim -voptargs="+acc" work.RISC_V_Single_Cycle_tb 
+# Start time: 18:54:23 on Apr 09,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.RISC_V_Single_Cycle_tb(fast)
+# Loading work.RISC_V_Single_Cycle(fast)
+# Loading work.Control_Unit(fast)
+# Loading work.Control_Signals(fast)
+# Loading work.ALU_Decoder(fast)
+# Loading work.Data_Path(fast)
+# Loading work.Reg_param(fast)
+# Loading work.Program_Memory(fast)
+# Loading work.rv32i_imm_gen(fast)
+# Loading work.Reg_File(fast)
+# Loading work.Decoder_Onehot(fast)
+# Loading work.Reg_param(fast__1)
+# Loading work.Reg_param(fast__2)
+# Loading work.Mux(fast)
+# Loading work.Mux4x1(fast)
+# Loading work.ALU(fast)
+# Loading work.Mux2x1(fast)
+# Loading work.Memory_Controller(fast)
+# Loading work.Data_Memory(fast)
+# Loading work.UART(fast)
+# Loading work.Register(fast)
+# Loading work.UART_TX(fast)
+# Loading work.Bit_Rate_Pulse(fast)
+# Loading work.FSM_UART_tx(fast)
+# Loading work.Counter_Param(fast)
+# Loading work.TXshift_register(fast)
+# Loading work.FF_D_2enable(fast)
+# Loading work.UART_RX(fast)
+# Loading work.Bit_Rate_Pulse(fast__1)
+# Loading work.FSM_UART_rx(fast)
+# Loading work.FF_D_enable(fast)
+# Loading work.RXshift_register(fast)
+# Loading work.GPIO(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (2) for port 'Mem_to_Reg_o'. The port definition is at: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/Control_Unit.v(21).
+#    Time: 0 ps  Iteration: 0  Instance: /RISC_V_Single_Cycle_tb/UUT/Control File: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/RISC_V_Single_Cycle.v Line: 41
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (4) for port 'ALU_Op'. The port definition is at: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/ALU_Decoder.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /RISC_V_Single_Cycle_tb/UUT/Control/Operation File: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/Control_Unit.v Line: 55
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (2) for port 'Selector'. The port definition is at: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/Mux2x1.v(9).
+#    Time: 0 ps  Iteration: 0  Instance: /RISC_V_Single_Cycle_tb/UUT/DataPath/Write_data_mux File: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/Data_Path.v Line: 138
+source sim.do
+run
+add wave -position 11  sim:/RISC_V_Single_Cycle_tb/UUT/DataPath/Reg_file/s0/Q
+add wave -position 12 sim:/RISC_V_Single_Cycle_tb/UUT/DataPath/Reg_file/s1/*
+add wave -position 12  sim:/RISC_V_Single_Cycle_tb/UUT/DataPath/Reg_file/s1/Q
+add wave -position 13  sim:/RISC_V_Single_Cycle_tb/UUT/DataPath/Reg_file/s2/Q
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.RISC_V_Single_Cycle_tb(fast)
+# Loading work.RISC_V_Single_Cycle(fast)
+# Loading work.Control_Unit(fast)
+# Loading work.Control_Signals(fast)
+# Loading work.ALU_Decoder(fast)
+# Loading work.Data_Path(fast)
+# Loading work.Reg_param(fast)
+# Loading work.Program_Memory(fast)
+# Loading work.rv32i_imm_gen(fast)
+# Loading work.Reg_File(fast)
+# Loading work.Decoder_Onehot(fast)
+# Loading work.Reg_param(fast__1)
+# Loading work.Reg_param(fast__2)
+# Loading work.Mux(fast)
+# Loading work.Mux4x1(fast)
+# Loading work.ALU(fast)
+# Loading work.Mux2x1(fast)
+# Loading work.Memory_Controller(fast)
+# Loading work.Data_Memory(fast)
+# Loading work.UART(fast)
+# Loading work.Register(fast)
+# Loading work.UART_TX(fast)
+# Loading work.Bit_Rate_Pulse(fast)
+# Loading work.FSM_UART_tx(fast)
+# Loading work.Counter_Param(fast)
+# Loading work.TXshift_register(fast)
+# Loading work.FF_D_2enable(fast)
+# Loading work.UART_RX(fast)
+# Loading work.Bit_Rate_Pulse(fast__1)
+# Loading work.FSM_UART_rx(fast)
+# Loading work.FF_D_enable(fast)
+# Loading work.RXshift_register(fast)
+# Loading work.GPIO(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (2) for port 'Mem_to_Reg_o'. The port definition is at: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/Control_Unit.v(21).
+#    Time: 0 ps  Iteration: 0  Instance: /RISC_V_Single_Cycle_tb/UUT/Control File: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/RISC_V_Single_Cycle.v Line: 41
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (4) for port 'ALU_Op'. The port definition is at: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/ALU_Decoder.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /RISC_V_Single_Cycle_tb/UUT/Control/Operation File: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/Control_Unit.v Line: 55
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (2) for port 'Selector'. The port definition is at: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/Mux2x1.v(9).
+#    Time: 0 ps  Iteration: 0  Instance: /RISC_V_Single_Cycle_tb/UUT/DataPath/Write_data_mux File: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/Data_Path.v Line: 138
+run
+run
+run
+# Compile of ALU.v was successful.
+# Compile of ALU_Decoder.v was successful.
+# Compile of Bit_Rate_Pulse.v was successful.
+# Compile of Control_Signals.v was successful.
+# Compile of Control_Unit.v was successful.
+# Compile of Counter_Param.v was successful.
+# Compile of Data_Memory.v was successful.
+# Compile of Data_Path.v was successful.
+# Compile of Decoder_Onehot.v was successful.
+# Compile of FF_D_2enable.v was successful.
+# Compile of FF_D_enable.v was successful.
+# Compile of FSM_UART_rx.v was successful.
+# Compile of FSM_UART_tx.v was successful.
+# Compile of GPIO.v was successful.
+# Compile of Memory_Controller.v was successful.
+# Compile of Mux.v was successful.
+# Compile of Mux2x1.v was successful.
+# Compile of Mux4x1.v was successful.
+# Compile of Program_Memory.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_param.v was successful.
+# Compile of Register.v was successful.
+# Compile of RISC_V_Single_Cycle.v was successful.
+# Compile of RISC_V_Single_Cycle_tb.v was successful.
+# Compile of rv32i_imm_gen.v was successful.
+# Compile of RXshift_register.v was successful.
+# Compile of shift_left_one.v was successful.
+# Compile of TXshift_register.v was successful.
+# Compile of UART.v was successful.
+# Compile of UART_RX.v was successful.
+# Compile of UART_TX.v was successful.
+# Compile of RISC_V_Single_Cycle_UART_tb.v was successful.
+# 32 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.RISC_V_Single_Cycle_UART_tb
+# End time: 19:22:25 on Apr 09,2023, Elapsed time: 0:28:02
+# Errors: 0, Warnings: 5
+# vsim -voptargs="+acc" work.RISC_V_Single_Cycle_UART_tb 
+# Start time: 19:22:25 on Apr 09,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.RISC_V_Single_Cycle_UART_tb(fast)
+# Loading work.RISC_V_Single_Cycle(fast)
+# Loading work.Control_Unit(fast)
+# Loading work.Control_Signals(fast)
+# Loading work.ALU_Decoder(fast)
+# Loading work.Data_Path(fast)
+# Loading work.Reg_param(fast)
+# Loading work.Program_Memory(fast)
+# Loading work.rv32i_imm_gen(fast)
+# Loading work.Reg_File(fast)
+# Loading work.Decoder_Onehot(fast)
+# Loading work.Reg_param(fast__1)
+# Loading work.Reg_param(fast__2)
+# Loading work.Mux(fast)
+# Loading work.Mux4x1(fast)
+# Loading work.ALU(fast)
+# Loading work.Mux2x1(fast)
+# Loading work.Memory_Controller(fast)
+# Loading work.Data_Memory(fast)
+# Loading work.UART(fast)
+# Loading work.Register(fast)
+# Loading work.UART_TX(fast)
+# Loading work.Bit_Rate_Pulse(fast)
+# Loading work.FSM_UART_tx(fast)
+# Loading work.Counter_Param(fast)
+# Loading work.TXshift_register(fast)
+# Loading work.FF_D_2enable(fast)
+# Loading work.UART_RX(fast)
+# Loading work.Bit_Rate_Pulse(fast__1)
+# Loading work.FSM_UART_rx(fast)
+# Loading work.FF_D_enable(fast)
+# Loading work.RXshift_register(fast)
+# Loading work.GPIO(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (2) for port 'Mem_to_Reg_o'. The port definition is at: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/Control_Unit.v(21).
+#    Time: 0 ps  Iteration: 0  Instance: /RISC_V_Single_Cycle_UART_tb/UUT/Control File: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/RISC_V_Single_Cycle.v Line: 41
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (4) for port 'ALU_Op'. The port definition is at: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/ALU_Decoder.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /RISC_V_Single_Cycle_UART_tb/UUT/Control/Operation File: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/Control_Unit.v Line: 55
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (2) for port 'Selector'. The port definition is at: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/Mux2x1.v(9).
+#    Time: 0 ps  Iteration: 0  Instance: /RISC_V_Single_Cycle_UART_tb/UUT/DataPath/Write_data_mux File: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/Data_Path.v Line: 138
+source uart.do
+run
+run
+run
+run
+# Compile of ALU.v was successful.
+# Compile of ALU_Decoder.v was successful.
+# Compile of Bit_Rate_Pulse.v was successful.
+# Compile of Control_Signals.v was successful.
+# Compile of Control_Unit.v was successful.
+# Compile of Counter_Param.v was successful.
+# Compile of Data_Memory.v was successful.
+# Compile of Data_Path.v was successful.
+# Compile of Decoder_Onehot.v was successful.
+# Compile of FF_D_2enable.v was successful.
+# Compile of ALU.v was successful with warnings.
+# Compile of ALU_Decoder.v was successful.
+# Compile of Bit_Rate_Pulse.v was successful.
+# Compile of Control_Signals.v was successful.
+# Compile of Control_Unit.v was successful.
+# Compile of Counter_Param.v was successful.
+# Compile of Data_Memory.v was successful.
+# Compile of Data_Path.v was successful.
+# Compile of Decoder_Onehot.v was successful.
+# Compile of FF_D_2enable.v was successful.
+# Compile of FF_D_enable.v was successful.
+# Compile of FSM_UART_rx.v was successful.
+# Compile of FSM_UART_tx.v was successful.
+# Compile of GPIO.v was successful.
+# Compile of Memory_Controller.v was successful.
+# Compile of Mux.v was successful.
+# Compile of Mux2x1.v was successful.
+# Compile of Mux4x1.v was successful.
+# Compile of Program_Memory.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_param.v was successful.
+# Compile of Register.v was successful.
+# Compile of RISC_V_Single_Cycle.v was successful.
+# Compile of RISC_V_Single_Cycle_tb.v was successful.
+# Compile of rv32i_imm_gen.v was successful.
+# Compile of RXshift_register.v was successful.
+# Compile of shift_left_one.v was successful.
+# Compile of TXshift_register.v was successful.
+# Compile of UART.v was successful.
+# Compile of UART_RX.v was successful.
+# Compile of UART_TX.v was successful.
+# Compile of RISC_V_Single_Cycle_UART_tb.v was successful.
+# 32 compiles, 0 failed with no errors.
+# Compile of FF_D_enable.v was successful.
+# Compile of FSM_UART_rx.v was successful.
+# Compile of FSM_UART_tx.v was successful.
+# Compile of GPIO.v was successful.
+# Compile of Memory_Controller.v was successful.
+# Compile of Mux.v was successful.
+# Compile of Mux2x1.v was successful.
+# Compile of Mux4x1.v was successful.
+# Compile of Program_Memory.v was successful.
+# Compile of Reg_File.v was successful.
+# Compile of Reg_param.v was successful.
+# Compile of Register.v was successful.
+# Compile of RISC_V_Single_Cycle.v was successful.
+# Compile of RISC_V_Single_Cycle_tb.v was successful.
+# Compile of rv32i_imm_gen.v was successful.
+# Compile of RXshift_register.v was successful.
+# Compile of shift_left_one.v was successful.
+# Compile of TXshift_register.v was successful.
+# Compile of UART.v was successful.
+# Compile of UART_RX.v was successful.
+# Compile of UART_TX.v was successful.
+# Compile of RISC_V_Single_Cycle_UART_tb.v was successful.
+# 32 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.RISC_V_Single_Cycle_tb
+# End time: 21:27:10 on Apr 12,2023, Elapsed time: 74:04:45
+# Errors: 0, Warnings: 6
+# vsim -voptargs="+acc" work.RISC_V_Single_Cycle_tb 
+# Start time: 21:27:10 on Apr 12,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.RISC_V_Single_Cycle_tb(fast)
+# Loading work.RISC_V_Single_Cycle(fast)
+# Loading work.Control_Unit(fast)
+# Loading work.Control_Signals(fast)
+# Loading work.ALU_Decoder(fast)
+# Loading work.Data_Path(fast)
+# Loading work.Reg_param(fast)
+# Loading work.Program_Memory(fast)
+# Loading work.rv32i_imm_gen(fast)
+# Loading work.Reg_File(fast)
+# Loading work.Decoder_Onehot(fast)
+# Loading work.Reg_param(fast__1)
+# Loading work.Reg_param(fast__2)
+# Loading work.Mux(fast)
+# Loading work.Mux4x1(fast)
+# Loading work.ALU(fast)
+# Loading work.Mux2x1(fast)
+# Loading work.Memory_Controller(fast)
+# Loading work.Data_Memory(fast)
+# Loading work.UART(fast)
+# Loading work.Register(fast)
+# Loading work.UART_TX(fast)
+# Loading work.Bit_Rate_Pulse(fast)
+# Loading work.FSM_UART_tx(fast)
+# Loading work.Counter_Param(fast)
+# Loading work.TXshift_register(fast)
+# Loading work.FF_D_2enable(fast)
+# Loading work.UART_RX(fast)
+# Loading work.Bit_Rate_Pulse(fast__1)
+# Loading work.FSM_UART_rx(fast)
+# Loading work.FF_D_enable(fast)
+# Loading work.RXshift_register(fast)
+# Loading work.GPIO(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (2) for port 'Mem_to_Reg_o'. The port definition is at: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/Control_Unit.v(21).
+#    Time: 0 ps  Iteration: 0  Instance: /RISC_V_Single_Cycle_tb/UUT/Control File: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/RISC_V_Single_Cycle.v Line: 41
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (4) for port 'ALU_Op'. The port definition is at: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/ALU_Decoder.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /RISC_V_Single_Cycle_tb/UUT/Control/Operation File: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/Control_Unit.v Line: 55
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (2) for port 'Selector'. The port definition is at: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/Mux2x1.v(9).
+#    Time: 0 ps  Iteration: 0  Instance: /RISC_V_Single_Cycle_tb/UUT/DataPath/Write_data_mux File: C:/My_Designs/QuartusPrime/RISC_V_Single_Cycle/src/Data_Path.v Line: 138
+source sim.do
+run
+run
+run
+run
+run
+run
+# Causality operation skipped due to absence of debug database file
+# End time: 21:53:03 on Apr 12,2023, Elapsed time: 0:25:53
+# Errors: 0, Warnings: 4
